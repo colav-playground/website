@@ -36,26 +36,31 @@ import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
 
+//Aqui el import de las vistas de colciencias
+import  H5  from "views/Colcienicias/H5.js";
+import AlcanceGeografico  from "views/Colcienicias/AlcanceGeografico.js";
+import Redes from "views/Colcienicias/Redes.js";
+
 const dashboardRoutes = [
   {
-    path: "/dashboard",
-    name: "Dashboard",
+    path: "/colciencias/h5",
+    name: "H5",
     icon: Dashboard,
-    component: DashboardPage,
+    component: H5,
     layout: "/admin"
   },
   {
-    path: "/projects",
-    name: "Projects",
-    icon: Person,
-    component: UserProfile,
+    path: "/alcancegeografico",
+    name: "Alcance Geografico",
+    icon: Dashboard,
+    component: AlcanceGeografico,
     layout: "/admin"
   },
   {
-    path: "/reports",
-    name: "Reports",
+    path: "/redes",
+    name: "Redes",
     icon: "content_paste",
-    component: TableList,
+    component: Redes,
     layout: "/admin"
   },
   {
